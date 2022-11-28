@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+  margin-left: 0;
+}
+
 .bg-batt {
   background-color: #fe0000;
 }
@@ -16,6 +28,10 @@
   --bs-navbar-hover-color: #ffffff;
 }
 
+.navbar-brand {
+  margin: 0 15px 0 8px;
+}
+
 .dropdown-menu {
   --bs-dropdown-min-width: 0;
 }
@@ -23,6 +39,10 @@
 .dropdown-menu[data-bs-popper] {
   margin-top: 0;
   left: 16px;
+}
+
+.dropdown-item {
+  white-space: normal;
 }
 
 .carousel-indicators {
@@ -49,4 +69,56 @@
 
 .button-custom:hover {
   background-color: #fe0000;
+}
+
+.form-custom {
+  position: relative;
+  top: -70px;
+}
+
+span.small {
+  font-size: x-small;
+}
+
+.cek-tarif-tag-1 {
+  display: none;
+}
+
+.cek-tarif-tag-2 {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    margin: 0 15px;
+  }
+
+  .form-custom {
+    padding: 0 60px !important;
+  }
+
+  .cek-tarif-custom {
+    flex-direction: column !important;
+  }
+
+  #asal,
+  #tujuan,
+  #berat {
+    width: 100% !important;
+    margin-bottom: 5px;
+  }
+
+  .cek-tarif-tag-1 {
+    display: block;
+  }
+
+  .cek-tarif-tag-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .form-custom {
+    padding: 0 20px !important;
+  }
 }
