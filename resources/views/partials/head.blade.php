@@ -17,5 +17,7 @@
   <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
 
-  @vite(["resources/js/app.js"])
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/sidebars.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
 @endsection
