@@ -7,5 +7,5 @@
 @section('title', 'Batt Cargo | Logistic & Distribution')
 
 @section('content')
-<h1>What's up motherfuckers!!!</h1>
+
 @endsection
