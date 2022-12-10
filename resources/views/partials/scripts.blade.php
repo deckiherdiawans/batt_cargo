@@ -1,9 +1,4 @@
 @section('scripts')
-<script>
-  const
-    navbar = document.getElementById("navbar"),
-    toggleNav = () => {
-      navbar.classList.toggle("hidden")
-    }
-</script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/sidebars.js"></script>
 @endsection
