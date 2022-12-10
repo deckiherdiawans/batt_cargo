@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Agent</h2>
+                <h2>Edit Permission</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('agents.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('permissions.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
         </div>
     @endif
 
-    <form action="{{ route('agents.update', $agent->id) }}" method="POST">
+    <form action="{{ route('permissions.update', $permission->id) }}" method="POST">
         @csrf
         @method('PUT')
 
@@ -31,14 +31,8 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name:</strong>
-                    <input type="text" name="name" value="{{ $agent->name }}" class="form-control"
+                    <input type="text" name="name" value="{{ $permission->name }}" class="form-control"
                         placeholder="Name">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Detail:</strong>
-                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $agent->detail }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
